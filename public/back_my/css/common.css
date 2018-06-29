@@ -11,6 +11,10 @@ ul {
   padding: 0;
   text-decoration: none;
 }
+
+.red {
+  color: #C94442;
+}
 .body_bg {
   background-color: #222D32;
 }
@@ -35,6 +39,10 @@ ul {
   top: 0;
   background-color: #222D32;
   z-index: 999;
+  transition: all 1s;
+}
+.lt_aside.hidemenu {
+  left: -180px;
 }
 .lt_aside .brand {
   height: 50px;
@@ -90,7 +98,10 @@ ul {
   height: 1000px;
   padding-left: 180px;
   padding-top: 50px;
-  background-color: pink;
+  transition: all 1s;
+}
+.lt_main.hidemenu {
+  padding-left: 0;
 }
 .lt_topbar {
   height: 50px;
@@ -100,6 +111,10 @@ ul {
   top: 0;
   background-color: #3C8DBC;
   padding-left: 180px;
+  transition: all 1s;
+}
+.lt_topbar.hidemenu {
+  padding-left: 0;
 }
 .lt_topbar .icon_menu,
 .lt_topbar .icon_logout {
@@ -114,5 +129,10 @@ ul {
   margin-top: 15px;
 }
 
-
-
+/*echarts部分*/
+.echarts_1,
+.echarts_2 {
+  width: 48%;
+  height: 400px;
+  
+}

@@ -1,6 +1,6 @@
 
 /*
-* 1 表单校验功能
+* 表单校验功能
 * */
 $(function () {
   // 表单校验初始化
@@ -51,7 +51,7 @@ $(function () {
 
 
 /*
-* 2 阻止默认事件，使用ajax提交
+*  阻止默认事件，使用ajax提交
 * */
 $(function () {
   $('#form').on("success.form.bv",function ( e ) {
@@ -80,7 +80,7 @@ $(function () {
 });
 
 /*
-* 3 重置表单
+*  重置表单
 * */
 $('[type="reset"]').click(function () {
   $('#form').data('bootstrapValidator').resetForm(true);
